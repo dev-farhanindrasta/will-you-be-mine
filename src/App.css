@@ -1,0 +1,81 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  /* horizontal */
+  align-items: center;  
+  padding: 32px;
+  background: #EEEEEE;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.image {
+  width: 150px;
+}
+
+.image-larger {
+  width: 300px;
+}
+
+.title {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 600;
+  color: #213C51;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.button-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-around; 
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.yes-btn {
+  background: linear-gradient(135deg, #ff4d6d, #ff8fa3);
+  color: white;
+}
+
+.yes-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 77, 109, 0.6);
+}
+
+.no-btn {
+  background-color: #BFC6C4;
+  transition: all 0.1s ease;
+}
+
+.yay-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
